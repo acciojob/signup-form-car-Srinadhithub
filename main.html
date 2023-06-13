@@ -10,26 +10,25 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-<form action="post">
-	<label for="name">Name</label>
-	<input type="text" placeholder="Name"  id="name" required>
-	<br>
-	<label for="email">Email</label>
-	<input type="text" placeholder="Email"  id="email" required>
-		<br>
-	<label for="gender_m">Male</label>
-	<input type="radio" id="gender_m"  name="gender" required>
-	<label for="gender_f">Female</label>
-	<input type="radio" id="gender_f"  name="gender" required>
-		<br>
-	<label for="cars">Choose a car:</label>
+<form method="post">
+		<label for ="name">Name</label>
+		<input type="text" placeholder="Name" required id="name" name="name">
+		<label for="email">Email</label>
+		<input type="email" placeholder="Email" required id="email" name="email">
+		<label for ="gender">Gender</label>
+		<label for ="gender_m">Male</label>
+		<input type="radio" id="gender_m" name="gender">
+		<label for ="gender_f">Female</label>
+		<input type="radio" id="gender_f" name="gender"><br>
+
+
+		<label for="cars">Choose a car:</label>
         <select required id="cars" name="cars" placeholder="--Please choose an option--">
         <option value="BMW">BMW</option>
         <option value="Audi">Audi</option>
         <option value="Mercedez">Mercedez</option>
 		</select><br>
-	
-	<label for ="age">Age</label>
+		<label for ="age">Age</label>
 		<input type="text" id=age required placeholder="Age"><br>
 		<label for ="dob">DOB</label>
 		<input type="date" id=dob required><br>
@@ -37,13 +36,10 @@
 		<input type="tel" id ="tel"placeholder="xx-xxx-xxxx"><br>
 		<label for="password">Password</label>
 		<input type="password" id=password required><br>
-	<br>
-	<br>
-	<input type="checkbox" id="tos" required> I agree to the TOS.
-	<br>
-	<br>
-	<input type="submit" >
-</form>
+		<label for ="tos">I agree to the TOS</label>
+		<input type="checkbox" id=tos required><br><br>
+		<button type="submit" id= value="Submit">Submit</button>
+	</form>
 </body>
 
 </html>
